@@ -48,7 +48,7 @@ export default function FaceExpressionDetector() {
   // Fetch songs
   const fetchSongs = async (mood) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/songs/${mood}`);
+      const res = await fetch(`https://mood-player-backend.onrender.com/${mood}`);
       const data = await res.json();
       setSongs(data.songs || []);
       setPlayingIndex(null);

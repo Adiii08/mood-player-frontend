@@ -46,7 +46,8 @@ export default function FaceExpressionDetector() {
   };
 
   // Fetch songs
- const BACKEND_URL = "https://mood-player-backend.onrender.com";
+ const BACKEND_URL = "https://mood-player-backend.onrender.com/";
+
 
 const fetchSongs = async (mood) => {
   try {
